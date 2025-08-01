@@ -7,9 +7,9 @@
     <meta name="author" content="HAMADA Tatsuyoshi">
     <!--meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors"-->
     <meta name="generator" content="Hugo 0.112.5">
-    <title>ICM2030Tokyo invitiation</title>
-    <link rel="canonical" href="https://www.mathsoc.jp/">
-    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>公式ロゴデザイン決定のお知らせ</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/starter-template/">
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -91,42 +91,35 @@
 
 <div class="col-lg-8 mx-auto p-4 py-md-5">
   <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
-    
-    <a href="https://www.mathsoc.jp/" class="d-flex align-items-center text-body-emphasis text-decoration-none">
-      <img src="https://www.mathsoc.jp/assets/images/common/logo-black.png"alt="一般社団法人　日本数学会><span class="fs-4">　一般社団法人　日本数学会</span>
+    <a href="../index.html" class="d-flex align-items-center text-body-emphasis text-decoration-none">
+      <!--svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg-->
+      <span class="fs-4">ICM2030招致委員会</span>
     </a>
   </header>
 
   <main>
-    <h1 class="text-body-emphasis">ICM2030招致委員会</h1>
-    <p class="fs-5 col-md-10">ICM2030 (International Congress of Mathematicians 2030) の招致・開催に向けて設置されました．本ページでは招致に向けた活動について情報共有を行います．</p>
-
-    <hr class="col-3 col-md-2 mb-5">
-
+    <h1 class="text-body-emphasis">公式ロゴデザイン決定のお知らせ</h1>
+    <p class="fs-6 col-md-12">
+      6月末まで公募していたICM2030の公式デザインの応募130件の中から、次の作品が選ばれました。
+    </p>
+    <img src="../img/icm2030bid_logo.jpg"></img>
+      <dl class="fs-6 col-md-12">
+	<dt>作者：箱崎 勝茂 様</dt>
+	<dd>作品に関する解説：日本のシンボルでもある富士山を、三平方の定理を理解する上で重要なツールである三角定規の二等辺直角三角形に見立ててICM2030のロゴマークを作成しました。二等辺直角三角形は直角三角形と組み合わせることで様々な角度を表現することができます。また視認性の高いシンプルで力強いイメージは大小様々な媒体で使用されることを想定しています。</dd>
+      </dl>
+    <hr class="col-5 col-md-2 mb-5">
     <div class="row g-5">
-      <div class="col-md-6">
-        <h2 class="text-body-emphasis">News</h2>
-        <ul class="list-unstyled ps-0">
-          <!--li><a href="./news/2025-04-07-logo.html">2025-04-07 公式ロゴデザインの募集</a></li-->
-	  <li><a href="news/2025-07-31-logo_announce.html">2025-07-31 公式ロゴデザイン決定のお知らせ</li>
-          <li><a href="https://www.mathsoc.jp/publicity/news20250407.html">2025-04-07 公式ロゴデザインの募集</a></li>
-        </ul>
-      </div>
-
-      <div class="col-md-6">
-        <h2 class="text-body-emphasis">About</h2>
-        <p>ICM2030招致委員会についての情報</p>
-        <ul class="list-unstyled ps-0">
-          <li><a href="./members.html">委員会名簿</a></li>
-        </ul>
-      </div>
+      <p class="fs-6 col-md-12">今後、ICM2030の東京への招致、そして招致が決まりましたらICM2030開催まで、この公式ロゴデザインを使わせていただきます。なお、著作権はICM招致委員会に帰属しておりますので、上記のデザインの転用や無断使用はお避け下さい。
+	<br>
+	<br>
+ICM2030招致委員会</p>
     </div>
   </main>
   <!--footer class="pt-5 my-5 text-body-secondary border-top">
     Created by the Bootstrap team &middot; &copy; 2023
   </footer-->
 </div>
-<script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
     </body>
 </html>
