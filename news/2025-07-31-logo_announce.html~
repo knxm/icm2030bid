@@ -7,7 +7,7 @@
     <meta name="author" content="HAMADA Tatsuyoshi">
     <!--meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors"-->
     <meta name="generator" content="Hugo 0.112.5">
-    <title>template_date</title>
+    <title>公式ロゴデザイン決定のお知らせ</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/starter-template/">
 <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -98,15 +98,21 @@
   </header>
 
   <main>
-    <h1 class="text-body-emphasis">template_h1_title</h1>
-    <p class="fs-5 col-md-8"></p>
-
-    <hr class="col-3 col-md-2 mb-5">
-
+    <h1 class="text-body-emphasis">公式ロゴデザイン決定のお知らせ</h1>
+    <p class="fs-6 col-md-12">
+      6月末まで公募していたICM2030の公式デザインの応募130件の中から、次の作品が選ばれました。
+    </p>
+    <img src="../img/icm2030bid_logo.jpg"></img>
+      <dl class="fs-6 col-md-12">
+	<dt>作者：箱崎 勝茂 様</dt>
+	<dd>作品に関する解説：日本のシンボルでもある富士山を、三平方の定理を理解する上で重要なツールである三角定規の二等辺直角三角形に見立ててICM2030のロゴマークを作成しました。二等辺直角三角形は直角三角形と組み合わせることで様々な角度を表現することができます。また視認性の高いシンプルで力強いイメージは大小様々な媒体で使用されることを想定しています。</dd>
+      </dl>
+    <hr class="col-5 col-md-2 mb-5">
     <div class="row g-5">
-      <div class="col-md-12">
-        <p>template_p_contents</p>
-      </div>
+      <p class="fs-6 col-md-12">今後、ICM2030の東京への招致、そして招致が決まりましたらICM2030開催まで、この公式ロゴデザインを使わせていただきます。なお、著作権はICM招致委員会に帰属しておりますので、上記のデザインの転用や無断使用はお避け下さい。
+	<br>
+	<br>
+ICM2030招致委員会</p>
     </div>
   </main>
   <!--footer class="pt-5 my-5 text-body-secondary border-top">
