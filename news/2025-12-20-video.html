@@ -7,7 +7,7 @@
     <meta name="author" content="HAMADA Tatsuyoshi">
     <!--meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors"-->
     <meta name="generator" content="Hugo 0.112.5">
-    <title>公式キャラクター採用のお知らせ</title>
+    <title>Announcement of promotion video</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/starter-template/">
 <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -85,31 +85,34 @@
       }
     </style>
 
-    
   </head>
   <body>
+<div class="bg-white text-end text-info py-1 px-3">
+  <a href="?lang=ja" class="text-dark text-decoration-none me-2">Japanese</a>
+  <a href="?lang=en" class="text-dark text-decoration-none me-2">English</a>
+</div>
 
 <div class="col-lg-8 mx-auto p-4 py-md-5">
   <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
     <a href="../index.html" class="d-flex align-items-center text-body-emphasis text-decoration-none">
       <!--svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg-->
-      <span class="fs-4">ICM2030招致委員会</span>
+      <span class="fs-4" data-i18n="committee">ICM2030招致委員会</span>
     </a>
   </header>
 
   <main>
-    <h1 class="text-body-emphasis">公式キャラクター採用のお知らせ</h1>
-    <p class="fs-6 col-md-12">ICM招致委員会では、九州工業大学の本田あおいさんにデザインしていただいた「でるたん」をICM2030の公式キャラクターに採用しました。</p>
+    <h1 data-i18n="title" class="text-body-emphasis"></h1>
+    <p class="fs-6 col-md-12" data-i18n="description"></p>
 
-    <img src="../img/derutan_f.png"><img src="../img/derutan_b.png">
-
-    <p class="fs-6 col-md-12">「数学と冒険が大好きな、好奇心いっぱいのくま。どんな小さな変化も見逃さない特別な目を持っている。すべての発見をヒントにして、素敵な世界を冒険中。」</p>
-    <hr class="col-3 col-md-2 mb-5">
-    <div class="row g-5">
-      <p class="fs-6 col-md-12">今後、ICM2030の東京への招致、そして招致が決まりましたらICM2030開催まで、この公式キャラクターを使わせていただきます。なお、著作権はICM招致委員会に帰属しておりますので、上記のデザインの転用や無断使用はお避け下さい。
-	<br>
-	<br>
-ICM2030招致委員会</p>
+    <div class="ratio ratio-16x9">
+      <video controls>
+	<source src="../video/icm2030tokyo.m3u8" type="application/x-mpegURL">
+      </video>
+    </div>
+      <p class="fs-6 col-md-12"><a href="../video/icm2030tokyo.mp4" target="_blank">MP4</a>, <a href="https://youtu.be/FeRgzV0lzK8?si=6ijVVwSGAGTPg1xq" target="_blank">YouTube</a></p>
+    <div class="row g-1">
+      <hr class="col-3 col-md-2 mb-5">
+      <p data-i18n="committee"></p>
     </div>
   </main>
   <!--footer class="pt-5 my-5 text-body-secondary border-top">
@@ -117,6 +120,36 @@ ICM2030招致委員会</p>
   </footer-->
 </div>
 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  const params = new URLSearchParams(location.search);
+  const langParam = params.get("lang");
+
+// 対応言語
+  const supportedLangs = ["ja", "en"];
+  const lang = supportedLangs.includes(langParam) ? langParam : "ja";
+
+
+  const dict = {
+    ja: {
+	committee: "ICM2030招致委員会",
+	title: "プロモーションビデオ公開のお知らせ",
+	description: "ICM2030招致委員会では、プロモーションビデオを公開いたしました。国際数学者会議 (ICM2030) の開催場所は、2026年7月に開催される国際数学連合 (IMU) の総会で決定されます。"
+    },
+    en: {
+	committee: "The ICM2030 bidding commiitee in Japan", 
+	title: "Video: Bid for ICM2030 in Japan",
+	description: "We are preparing for a bid for ICM2030 in Tokyo, Japan. The site for ICM 2030 will be decided at General Assembly of International Mathematical Union in July, 2026."
+    }
+  };
+
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+      const key = el.dataset.i18n;
+      el.textContent = dict[lang][key];
+  });
+
+  document.documentElement.lang = lang;
+</script>
 
     </body>
 </html>
